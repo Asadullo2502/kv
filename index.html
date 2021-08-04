@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/main.css">
+   <title>Document</title>
+</head>
+<body>
+   <audio src="./music/1261.mp3" id='audio'></audio>
+   <header class="header">
+      <div class="header-inner container">
+         <a href="" class="header-inner__logo">
+            KVARTIRA MODUL
+         </a>
+         
+         <!-- <div class="header-inner-item">
+            <a href="" class="header-inner-item__links">
+               Kalendar
+            </a>
+            <a href="" class="header-inner-item__links">
+               Statistika
+            </a>
+         </div>
+
+         <div class="burger">
+            <span></span>
+         </div> -->
+      </div>
+   </header>
+
+   <section class="section1">
+      <div class="section1-inner container">
+         <div class="section1-inner-top">
+            <div class="row">
+               <h4>Ism</h4>
+               <h4>Sana</h4>
+               <h4>Vazifa</h4>
+            </div>
+         </div>
+
+         <div class="section1-inner-body">
+            <div class="row">
+               <h4>Asadulloh</h4>
+               <h4 class="date">04.08.2021</h4>
+               <h4 class="asadulloh">  </h4>
+            </div>
+
+            <div class="row">
+               <h4>Iskandar</h4>
+               <h4 class="date">03.08.2021</h4>
+               <h4 class="iskandar"></h4>
+            </div>
+
+            <div class="row">
+               <h4>Shoxabos</h4>
+               <h4 class="date">02.08.2021</h4>
+               <h4 class="shoxabos"></h4>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="section2 container">
+      <h3>
+         Bizning shiyor
+      </h3>
+      <h3>
+          Tozalik, do'stlik va oqibat garovidur !
+      </h3>
+   </section>
+
+   <script>
+      // let itemLink = document.querySelector('.header-inner-item')
+      // let burger = document.querySelector('.burger')
+      
+      // burger.addEventListener('click', () => {
+      //    itemLink.classList.toggle('active')
+      // })
+      let asadulloh = document.querySelector('.asadulloh')
+      let iskandar = document.querySelector('.iskandar')
+      let shoxabos = document.querySelector('.shoxabos')
+
+     audio = document.getElementById("audio");
+     audio.play();
+      
+      
+      
+      
+      let date = document.querySelectorAll('.date')
+      let data = new Date()
+      let day = data.getDate() < 10 ? '0' + +data.getDate() : data.getDate()
+      let month = data.getMonth() < 10 ? '0' + data.getMonth() : data.getMonth()
+      date.forEach(el => {
+         el.innerHTML = day + '.' + month + '.' + data.getFullYear()
+      })
+      let vazifalar
+
+      switch(true) {
+         case day == '05': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '06':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '07':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '08': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '09':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '10':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '11': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '12':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '13':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '14': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '15':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '16':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '17': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '18':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '19':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '20': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '21':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '22':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '23': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '24':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '25':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '26': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '27':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '28':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         case day == '29': 
+          vazifalar = ['Oshhona', 'Uborka', 'Zal']
+          break
+         case day == '30':
+          vazifalar = ['Uborka', 'Zal', 'Oshhona']
+          break
+         case day == '31':
+          vazifalar = ['Zal', 'Oshhona', 'Uborka']
+          break
+         
+      }
+      
+      asadulloh.innerHTML = vazifalar[0]
+      iskandar.innerHTML = vazifalar[1]
+      shoxabos.innerHTML = vazifalar[2]
+   </script>
+</body>
+</html>

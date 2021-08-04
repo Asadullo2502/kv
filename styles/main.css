@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 576px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  z-index: 9997;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-inner__logo {
+  color: red;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px 0;
+}
+
+.header-inner-item {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0;
+  overflow: hidden;
+  background: red;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.header-inner-item.active {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  width: 50%;
+  padding: 20px 10px;
+}
+
+.header-inner-item.active ~ .burger span {
+  height: 0;
+}
+
+.header-inner-item.active ~ .burger span::before {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background: white;
+}
+
+.header-inner-item.active ~ .burger span::after {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background: white;
+}
+
+.header-inner-item__links {
+  color: red;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  background: white;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.header-inner .burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+}
+
+.header-inner .burger span {
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: red;
+  z-index: 9999;
+}
+
+.header-inner .burger span::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: red;
+  top: -7px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.header-inner .burger span::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: red;
+  top: 7px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.section1 {
+  margin-top: 50px;
+}
+
+.section1-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1-inner .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.section1-inner .row h4 {
+  width: 30%;
+  font-size: 17px;
+}
+
+.section1-inner-top {
+  margin-bottom: 20px;
+}
+
+.section2 {
+  margin-top: 50px;
+}
+
+.section2 h3 {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=main.css.map */
